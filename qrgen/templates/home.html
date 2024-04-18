@@ -129,6 +129,16 @@
       #openNav {
         animation: rotate 5s infinite linear;
     }
+    .contact-link {
+        color: #C4FCEF;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    
+    .contact-link:hover {
+        color: #00BBB8;
+        text-decoration: none;
+    }
 </style>
 <html>
     {% load static%}
@@ -169,20 +179,31 @@
       
       <div id="main">
       
-      <div class="w3-teal">
-        <nav class="navbar navbar-dark" style="height: 70px; background: #000;">
-            {% comment %} <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button> {% endcomment %}
-            <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()" style="background-color: black;"><img src="/static/logo1.png" width="60" height="50" alt=""  ></button>
-
-            {% comment %} <a class="navbar-brand" href="https://chipper-mousse-cdab6a.netlify.app/" >
-                <img src="/static/logo1.png" width="60" height="50" alt=""  >
-            </a> {% endcomment %}
-           <div   style = " color: #fff; font-family:Poppins; font-size: 15px justify-content:center;" > 
-           </div>
-        </nav>
-       
-        
-      </div>
+        <div class="w3-teal">
+            <nav class="navbar navbar-dark" style="height: 70px; background: #000;">
+                {% comment %} <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()" style="background-color: black;">
+                    <img src="/static/logo1.png" width="60" height="50" alt="">
+    
+                </button> {% endcomment %}
+                <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()" style="background-color: black;">
+                    <img src="/static/logo1.png" width="60" height="50" alt="">
+                </button>
+                
+    
+                <div  style="color: #C4FCEF; font-family: Poppins; font-size: 15px;  " >
+                    To choose different qr click icon in left
+                </div>
+            
+                <div style="color: #fff; font-family: Poppins; font-size: 15px; justify-content: center;">
+                    <a href="https://portfolio-utk.vercel.app/"  target='_blank' class="contact-link">Portfolio</a>
+                    <a href="mailto:utkarshhg911@gmail.com?subject=Subject%20Here&body=Hello%20there!" target='_blank' class="contact-link">Contact Me</a>
+                    <a href="https://www.youtube.com/@techunsatisfied" target='_blank' class="contact-link">My channel</a>
+                    <a href="https://www.linkedin.com/in/utkarsh-gupta-075908223" target='_blank' class="contact-link">Linkedin</a>
+                </div>
+            </nav>
+           
+            
+          </div>
       
       <div class="maincontainer">
   
